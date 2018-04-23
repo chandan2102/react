@@ -1,0 +1,40 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+body{
+	background: url("images/rocky-shore.jpg") no-repeat center center fixed;
+  	background-size: cover;
+  	height: 100%;
+  	overflow: hidden;
+}
+
+.slide1{
+	background-color: white;
+    width: 1080px;
+	height: 530px;
+	margin: 30px auto;
+	border-radius: 10px;
+}
+
+.react{
+	width:100px;
+	height:40px;
+	border-radius: 20px;
+	background-color: black;
+	margin: 10px auto;
+}
+
+#logo{
+	width:30px;
+	height:30px;
+	display: inline-block;
+	margin: 5px;
+}
+
+#txt{
+	color: white;
+	display: inline-block;
+	font-family: Calibri, sans-serif
+}
