@@ -13,28 +13,118 @@ body{
 .slide1{
 	background-color: white;
     width: 1080px;
-	height: 530px;
+	height: 450px;
 	margin: 30px auto;
 	border-radius: 10px;
 }
 
 .react{
-	width:100px;
-	height:40px;
-	border-radius: 20px;
+	width:200px;
+	height:70px;
+	border-radius: 30px;
 	background-color: black;
 	margin: 10px auto;
 }
 
 #logo{
-	width:30px;
-	height:30px;
+	width: 50px;
+    height: 45px;
+    margin: 13px;
 	display: inline-block;
-	margin: 5px;
+	vertical-align: top;
 }
 
 #txt{
-	color: white;
+	margin: 9px;
+    display: inline-block;
+    font-family: Calibri, sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+.black{
+  	background-image: url("images/grand-canyon.jpg");
+  	background-color: dimgray;
+  	background-blend-mode: multiply;
+
+    width: 200px;
+	height: 450px;
 	display: inline-block;
-	font-family: Calibri, sans-serif
+	border-radius: 10px 0px 0px 10px;
+	vertical-align: top;
+}
+
+.sec1{
+    width: 199px;
+    height: 50px;
+    display: inline-block;
+    /*background-color: greenyellow;*/
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0.5;
+    border: 0.5px solid black;
+}
+
+.sec2{
+    width: 199px;
+    height: 60px;
+    display: inline-block;
+    /*background-color: springgreen;*/
+    opacity: 0.5;
+    border: 0.5px solid black;
+}
+
+.sec3{
+    width: 199px;
+    height: 250px;
+    display: inline-block;
+    /*background-color: aqua;*/
+    opacity: 0.5;
+    border: 0.5px solid black;
+}
+
+
+.white{
+	background-color: #F9F2F4;
+    width: 876px;
+	height: 450px;
+	display: inline-block;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.row1{
+    width: 876px;
+    height: 50px;
+    display: inline-block;
+    /*background-color: red;*/
+    border-radius: 0px 10px 0px 0px;
+    opacity: 0.5;
+    border: 0.5px solid black;
+}
+
+.row2{
+    width: 876px;
+    height: 130px;
+    display: inline-block;
+    /*background-color: green;*/
+    opacity: 0.5;
+    border: 0.5px solid black;
+}
+
+.row3{
+    width: 876px;
+    height: 235px;
+    display: inline-block;
+    /*background-color: blue;*/
+    opacity: 0.5;
+    border: 0.5px solid black;
+}
+
+.row4{
+    width: 876px;
+    height: 19px;
+    display: inline-block;
+    /*background-color: orangered;*/
+    border-radius: 0px 0px 10px 0px;
+    opacity: 0.5;
+    border: 0.5px solid black;
 }
