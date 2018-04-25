@@ -5,6 +5,8 @@
 
 body{
 	background: url("images/rocky-shore.jpg") no-repeat center center fixed;
+    background-color: lightblue;
+    background-blend-mode: luminosity;
   	background-size: cover;
   	height: 100%;
   	overflow: hidden;
@@ -58,28 +60,29 @@ body{
     width: 199px;
     height: 50px;
     display: inline-block;
-    /*background-color: greenyellow;*/
     border-radius: 10px 0px 0px 0px;
-    opacity: 0.5;
-    border: 0.5px solid black;
+}
+
+.sec1:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border-bottom: 1px solid white;
 }
 
 .sec2{
     width: 199px;
     height: 60px;
     display: inline-block;
-    /*background-color: springgreen;*/
-    opacity: 0.5;
-    border: 0.5px solid black;
 }
 
 .sec3{
+    border-top: 1px solid white;
+    padding-top: 10px;
     width: 199px;
-    height: 250px;
+    height: 285px;
     display: inline-block;
-    /*background-color: aqua;*/
-    opacity: 0.5;
-    border: 0.5px solid black;
 }
 
 
@@ -105,7 +108,7 @@ body{
     width: 876px;
     height: 130px;
     display: inline-block;
-    /*background-color: green;*/
+    background-color: darkgray;
     opacity: 0.5;
     border: 0.5px solid black;
 }
@@ -114,17 +117,114 @@ body{
     width: 876px;
     height: 235px;
     display: inline-block;
-    /*background-color: blue;*/
+    background-color: darkgray;
     opacity: 0.5;
     border: 0.5px solid black;
 }
 
 .row4{
     width: 876px;
-    height: 19px;
+    height: 31px;
     display: inline-block;
-    /*background-color: orangered;*/
+    background-color: darkgray;
     border-radius: 0px 0px 10px 0px;
     opacity: 0.5;
     border: 0.5px solid black;
+}
+
+.dash{
+    height: 25px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 13px 10px;
+    background-size: cover;
+    background-color: aqua;
+}
+
+.snap{
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 8px;
+    border-radius: 2px;
+    background-size: cover;
+    background-color: powderblue;
+}
+
+.data{
+    height: 210px;
+    width: 420px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 13px 8px;
+    border-radius: 2px;
+    background-size: cover;
+    background-color: orange;
+}
+
+.more{
+    height: 25px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 8px;
+    border-radius: 2px 2px 0px 0px;
+    background-size: cover;
+    background-color: lime;
+
+}
+
+.map{
+   background-image: url("images/world.png");
+    background-color: dimgray;
+    background-blend-mode: lighten;
+    background-size: contain;
+}
+
+#logo1{
+    width: 28px;
+    height: 25px;
+    margin: 13px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#txt1{
+    margin: 16px 6px;
+    display: inline-block;
+    font-family: Calibri, sans-serif;
+    color: white;
+    font-size: 17px;
+}
+
+#userphoto{
+    width: 30px;
+    height: 30px;
+    margin: 15px 12px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+}
+#username{
+    margin: 20px 6px;
+    display: inline-block;
+    font-family: Calibri, sans-serif;
+    color: white;
+    font-size: 17px;
+}
+
+.menuicon{
+    width: 30px;
+    height: 25px;
+    margin: 5px 12px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menudesc{
+    margin: 8px 6px;
+    display: inline-block;
+    font-family: Calibri, sans-serif;
+    color: white;
+    font-size: 15px;
 }
