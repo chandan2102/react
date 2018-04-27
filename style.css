@@ -99,34 +99,28 @@ body{
     height: 50px;
     display: inline-block;
     border-radius: 0px 10px 0px 0px;
+    background-color: white;
 }
 
 .row2{
     width: 876px;
     height: 130px;
     display: inline-block;
-    background-color: darkgray;
+    background-color: lightgray;
 }
 
 .row3{
     width: 876px;
     height: 243px;
     display: inline-block;
-    background-color: darkgray;
+    background-color: lightgray;
 }
-
-/*.row4{
-    width: 876px;
-    height: 179px;
-    display: inline-block;
-    background-color: darkgray;
-}*/
 
 .row4{
     width: 876px;
     height: 27px;
     display: inline-block;
-    background-color: darkgray;
+    background-color: lightgray;
     border-radius: 0px 0px 10px 0px;
 }
 
@@ -136,7 +130,7 @@ body{
     vertical-align: top;
     margin: 13px 10px;
     background-size: cover;
-    background-color: lavender;
+    background-color: white;
 }
 
 .snap{
@@ -171,6 +165,7 @@ body{
     border-radius: 2px 2px 0px 0px;
     background-size: cover;
     background-color: white;
+    font-family: Calibri, sans-serif;
 }
 
 .more{
@@ -185,7 +180,6 @@ body{
 }
 
 .map{
-    /*background-image: url("images/wrld.png");*/
     width: 400px;
     height: 180px;
     object-fit: fill;
@@ -205,7 +199,7 @@ body{
     display: inline-block;
     font-family: Calibri, sans-serif;
     color: white;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 #userphoto{
@@ -221,7 +215,7 @@ body{
     display: inline-block;
     font-family: Calibri, sans-serif;
     color: white;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .menuicon{
@@ -237,17 +231,10 @@ body{
     display: inline-block;
     font-family: Calibri, sans-serif;
     color: white;
-    font-size: 15px;
-}
-
-.sub{
-    /*opacity: 0.5;
-    filter: alpha(opacity=50);*/
+    font-size: 12px;
 }
 
 .sub:hover{
-    /*opacity: 1;
-    filter: alpha(opacity=100);*/
     background-color: gray;
 }
 
@@ -272,4 +259,86 @@ body{
     display: inline-block;
     font-family: Calibri, sans-serif;
     font-size: 15px;
+}
+
+
+.finder{
+    width: 20px;
+    height: 20px;
+    margin: 3px 1px;
+    vertical-align: top;
+}
+
+.search{
+    width: 377px;
+    height: 25px;
+    margin: 0px -3px;
+    border: none;
+}
+
+.elem{
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    display: inline-block;
+    margin: 2px 1px;
+    padding:0px 18px;
+}
+
+.r1{
+    width: 52px;
+    height: 67px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 0px;
+    background-size: cover;
+}
+.r2{
+    width: 144px;
+    height: 67px;
+    display: inline-block;
+    font-family: Calibri, sans-serif;
+}
+
+.r2 h5{
+    font-size: 24px;
+}
+
+.r2 p{
+    font-size: 16px;
+}
+
+.r2 h5,p{
+    margin: 4px 24px;
+    /*width:75px;*/
+}
+
+.r3{
+    width: 200px;
+    height: 33px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 0px;
+    background-size: cover;
+}
+
+.r3:before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border-top: 1px solid lightgray;
+}
+
+.r3 i{
+    margin: 8px;
+    color: lightgray;
+    /*font-family: Calibri, sans-serif;*/
+}
+
+.img{
+    width: 40px;
+    height: 35px;
+    margin: 17px 6px;
+
 }

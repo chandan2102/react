@@ -3,7 +3,8 @@
 <head>
 	<title>React</title>
 	<link rel="icon" href="images/react.png" type="image/png" sizes="16x16">
-	<link rel="stylesheet" type="text/css" href="style.css?ver.0.0.2"/>
+	<link rel="stylesheet" type="text/css" href="style.css?ver.0.0.3"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="slide1">
@@ -31,21 +32,48 @@
 		</div>
 		<div class="white">
 			<div class="row1">
-				<div class="dash" style="width: 150px"><img id="pipe" src="images/pipe.png"><p style="margin: -22px 44px; font-family: Calibri, sans-serif;">Dashboard</p></div>
-				<div class="dash" style="width: 400px"></div>
-				<div class="dash" style="width: 250px"></div>
+				<div class="dash" style="width: 150px">
+					<img id="pipe" src="images/pipe.png">
+					<p style="margin: -22px 44px; font-family: Calibri, sans-serif;">Dashboard</p>
+				</div>
+				<div class="dash" style="width: 400px">
+					<img class="finder" src="images/finder.png">
+    				<input class="search" type="text" placeholder="Search..." name="search">
+				</div>
+				<div class="dash" style="width: 250px">
+					<img class="elem" src="images/stats.png">
+					<img class="elem" src="images/hammer.png">
+					<img class="elem" src="images/bell.png">
+					<img class="elem" src="images/menu.png">
+				</div>
 			</div>
 			<div class="row2">
-				<div class="snap"></div>
-				<div class="snap"></div>
-				<div class="snap"></div>
-				<div class="snap"></div>
+				<div class="snap">
+					<div class="r1"><img class="img" src="images/database.png"></div>
+					<div class="r2"><p>Capacity</p><h5>105GB</h5></div>
+					<div class="r3"><i class="fa fa-refresh" aria-hidden="true"> Updated now</i></div>
+				</div>
+				<div class="snap">
+					<div class="r1"><img class="img" src="images/wallet.png"></div>
+					<div class="r2"><p>Revenue</p><h5>$ 1,345</h5></div>
+					<div class="r3"><i class="fa fa-calendar" aria-hidden="true"> Last day</i></div>
+				</div>
+				<div class="snap">
+					<div class="r1"><img class="img" src="images/redchart.png"></div>
+					<div class="r2"><p>Errors</p><h5>23</h5></div>
+					<div class="r3"><i class="fa fa-clock-o" aria-hidden="true"> In the last hour</i></div>
+				</div>
+				<div class="snap">
+					<div class="r1"><img class="img" src="images/twitter.png"></div>
+					<div class="r2"><p>Followers</p><h5>+45</h5></div>
+					<div class="r3"><i class="fa fa-refresh" aria-hidden="true"> Updated now</i></div>
+				</div>
 			</div>
 			<div class="row3">
 				<!-- <div style="width: 850px;height: 44px;background-color: white;"> -->
 					<div class="datahead">
 						<h3>Global Sales by Top Locations</h3>
-						<p>All Products that were shipped</p>
+						<p style="margin:0;">All Products that were shipped</p>
 					</div>
 					<div class="data">
 						<table style="width:100%">
