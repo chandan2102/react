@@ -3,19 +3,24 @@
 	margin:0px;
 }
 
+@font-face {
+  font-family: Montserrat;
+  src:  url('fonts/Montserrat-Regular.ttf');
+}
+
 body{
-	background: url("images/rocky-shore.jpg") no-repeat center center fixed;
-    background-color: lightblue;
+	background: url("images/rocky-shore.jpg") no-repeat center center fixed, linear-gradient(120deg, lightblue 10%, lightblue 100%);
     background-blend-mode: luminosity;
   	background-size: cover;
   	height: 100%;
-  	overflow: hidden;
+    /* font-family: Montserrat; */
+    font-family: Calibri, sans-serif;
 }
 
 .slide1{
 	background-color: white;
     width: 1080px;
-	height: 450px;
+	height: 590px;
 	margin: 30px auto;
 	border-radius: 10px;
 }
@@ -46,14 +51,17 @@ body{
 
 .black{
   	background-image: url("images/grand-canyon.jpg");
-  	background-color: dimgray;
-  	background-blend-mode: multiply;
+  	background-color: #111111DD;
+    background-blend-mode: multiply;
+    background-size: cover;
 
     width: 200px;
-	height: 450px;
-	display: inline-block;
+    height: 100%;
+    
+    display: inline-block;
+    vertical-align: top;
 	border-radius: 10px 0px 0px 10px;
-	vertical-align: top;
+	
 }
 
 .sec1{
@@ -68,17 +76,18 @@ body{
     display: block;
     margin: 0 auto;
     width: 90%;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid gray;
 }
 
 .sec2{
     width: 199px;
     height: 60px;
     display: inline-block;
+    margin-left: 4px;
 }
 
 .sec3{
-    border-top: 1px solid white;
+    border-top: 1px solid gray;
     padding-top: 10px;
     width: 199px;
     height: 285px;
@@ -87,15 +96,17 @@ body{
 
 
 .white{
-	background-color: #F9F2F4;
-    width: 876px;
-	height: 450px;
+	background-color: #F4F4F8;
+    width: 880px;
+    height: 550px;
+    
 	display: inline-block;
-	border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: -4px;
 }
 
 .row1{
-    width: 876px;
+    width: 880px;
     height: 50px;
     display: inline-block;
     border-radius: 0px 10px 0px 0px;
@@ -103,24 +114,30 @@ body{
 }
 
 .row2{
-    width: 876px;
-    height: 130px;
+    width: 880px;
+    height: 160px;
     display: inline-block;
-    background-color: lightgray;
+    background-color: #F4F4F8;
+
+    box-sizing: border-box;
+    padding: 12px 20px;
 }
 
 .row3{
-    width: 876px;
-    height: 243px;
+    width: 880px;
+    height: 338px;
     display: inline-block;
-    background-color: lightgray;
+    margin-top: 15px;
+    background-color: #F4F4F8;
+    border: 0px solid red;
 }
 
 .row4{
-    width: 876px;
+    width: 880px;
     height: 27px;
     display: inline-block;
-    background-color: lightgray;
+    text-align: center;
+    background-color: #F4F4F8;
     border-radius: 0px 0px 10px 0px;
 }
 
@@ -134,38 +151,71 @@ body{
 }
 
 .snap{
-    width: 200px;
-    height: 100px;
+    width: 180px;
+    height: 125px;
+
     display: inline-block;
     vertical-align: top;
-    margin: 15px 8px;
-    border-radius: 2px;
+
+    box-sizing: border-box;
+    margin: 15px 15px 15px 12px;
+    padding: 2px 3px;
+    border-radius: 3px;
     background-size: cover;
     background-color: white;
 }
 
 .data{
-    width: 420px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
+    
     display: inline-block;
     vertical-align: top;
-    margin: 0px 8px;
-    border-radius: 2px;
+
+    margin: 0px auto;
+    border: 0px solid gold;
+    border-radius: 3px;
     background-size: cover;
     background-color: white;
 }
 
+.data tr{
+    line-height: 26px;
+}
+
+.data tr::before{
+    content: "";
+    display: block;
+    margin: 0px auto;
+    width: 90%;
+    border-top: 1px solid whitesmoke;
+}
+
+.data td{
+    border-top: thin solid whitesmoke;
+    border-right: none;
+    border-left: none;
+}
+
 .datahead{
-    width: 850px;
-    height: 44px;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0px 8px;
+    width: 814px;
+    height: 70px;
+
+    margin: 0px auto;
     padding: 5px;
-    border-radius: 2px 2px 0px 0px;
+
+    border-radius: 3px 3px 0px 0px;
+    box-sizing: border-box;
+    padding: 10px 15px;
     background-size: cover;
     background-color: white;
     font-family: Calibri, sans-serif;
+}
+
+.datahead h3{
+    font-family: Arial;
+    font-size: 22px;
+    color: grey;
 }
 
 .more{
@@ -181,9 +231,11 @@ body{
 
 .map{
     width: 400px;
-    height: 180px;
+    height: 90%;
     object-fit: fill;
-    margin: 5px 10px;
+    margin: 5px 0px;
+    border: 0px solid green;
+    opacity: 0.7;
 }
 
 #logo1{
@@ -198,7 +250,7 @@ body{
     margin: 16px 6px;
     display: inline-block;
     font-family: Calibri, sans-serif;
-    color: white;
+    color: lightgray;
     font-size: 16px;
 }
 
@@ -214,13 +266,13 @@ body{
     margin: 20px 6px;
     display: inline-block;
     font-family: Calibri, sans-serif;
-    color: white;
+    color: lightgray;
     font-size: 14px;
 }
 
 .menuicon{
-    width: 30px;
-    height: 25px;
+    width: 25px;
+    height: 20px;
     margin: 5px 12px;
     display: inline-block;
     vertical-align: top;
@@ -230,12 +282,25 @@ body{
     margin: 8px 6px;
     display: inline-block;
     font-family: Calibri, sans-serif;
-    color: white;
-    font-size: 12px;
+    color: lightgrey;
+    font-size: 13px;
+}
+
+.sub{
+    height: 40px;
+    width: 95%;
+    margin: 0px auto;
+
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+    box-sizing: border-box;
+    padding-top: 4px;
 }
 
 .sub:hover{
-    background-color: gray;
+    background-color: #808080;
 }
 
 #pipe{
@@ -273,7 +338,9 @@ body{
     width: 377px;
     height: 25px;
     margin: 0px -3px;
+    color: grey;
     border: none;
+    outline: none;
 }
 
 .elem{
@@ -287,35 +354,48 @@ body{
 
 .r1{
     width: 52px;
-    height: 67px;
+    height: 85px;
     display: inline-block;
     vertical-align: top;
     margin: 0px 0px;
     background-size: cover;
 }
 .r2{
-    width: 144px;
-    height: 67px;
+    width: 118px;
+    height: 85px;
+
     display: inline-block;
+    vertical-align: top;
+
+    border: 0px solid red;
+    
     font-family: Calibri, sans-serif;
+    text-align: right;
 }
 
 .r2 h5{
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .r2 p{
-    font-size: 16px;
+    font-size: 18px;
 }
 
-.r2 h5,p{
-    margin: 4px 24px;
+.r2 p{
+    margin: 10px 10px 4px 10px;
     /*width:75px;*/
+}
+
+.r2 h5{
+    margin: 2px 10px 4px 10px;
 }
 
 .r3{
     width: 200px;
     height: 33px;
+    font-size: 15px;
+    font-family: Calibri, sans-serif;
+    color: lightgray;
     display: inline-block;
     vertical-align: top;
     margin: 0px 0px;
@@ -325,13 +405,13 @@ body{
 .r3:before {
     content: "";
     display: block;
-    margin: 0 auto;
+    margin: 0px auto;
     width: 90%;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid whitesmoke;
 }
 
 .r3 i{
-    margin: 8px;
+    margin: 8px 2px 8px 11px;
     color: lightgray;
     /*font-family: Calibri, sans-serif;*/
 }
